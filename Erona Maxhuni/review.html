@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HM-Creativity</title>
+		<meta name="viewport" content="device=device-width ,initial-scale=1.0 ">
+		<link rel="stylesheet" href="index-style.css">
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	</head>
+	<body id="HM-Creativity">
+		<nav>
+			<img src="images/2LOGO.jpg" />
+			<button onclick="geeksforgeeks()">
+				<img src="./images/menu.png" />
+			</button>
+			<ul class="em-ul1">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="brooches.html">Brooches</a></li>
+				<li><a href="necklaces.html">Necklaces</a></li>
+				<li><a href="bags.html">Bags</a></li>
+				<li><a class="em-active" href="review.html">Review</a></li>
+			</ul>
+			<ul class="em-ul2" id="ul2">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="brooches.html">Brooches</a></li>
+				<li><a href="necklaces.html">Necklaces</a></li>
+				<li><a href="bags.html">Bags</a></li>
+				<li><a class="em-active" href="review.html">Review</a></li>
+			</ul>
+		</nav>
+		<br><br><br><br><br>
+		<div class="em-container">
+		<h3>Your review</h3>
+		<form action="#">
+			<label for="fname">Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<br>
+			<label for="lname">Surname</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<br>
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			<option value="Kosovo">Kosovo</option>
+			<option value="Albania">Albania</option>
+			<option value="Other">Other</option>
+			</select>
+			<br>
+			<label for="subject">Comment</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+		</div>
+		
+	</body>
+	<script>
+		function geeksforgeeks() {
+			var x = document.getElementById("ul2");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HM-Creativity</title>
+		<meta name="viewport" content="device=device-width ,initial-scale=1.0 ">
+		<link rel="stylesheet" href="index-style.css">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<body id="HM-Creativity">
+		<nav>
+			<img src="images/2LOGO.jpg" />
+			<button onclick="geeksforgeeks()">
+				<img src="./images/menu.png" />
+			</button>
+			<ul class="em-ul1">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="brooches.html">Brooches</a></li>
+				<li><a href="necklaces.html">Necklaces</a></li>
+				<li><a class="em-active" href="bags.html">Bags</a></li>
+				<li><a href="review.html">Review</a></li>
+			</ul>
+			<ul class="em-ul2" id="ul2">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="brooches.html">Brooches</a></li>
+				<li><a href="necklaces.html">Necklaces</a></li>
+				<li><a class="em-active" href="bags.html">Bags</a></li>
+				<li><a href="review.html">Review</a></li>
+			</ul>
+		</nav>
+		<main>
+		<div class="em-products">
+
+			<section class="em-container">
+
+				<div class="em-product">
+					<img src="images/Bag%209.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 1</h4>
+						<p><span>29.99€</span></p>
+					</div>
+				</div>
+
+				<div class="em-product">
+					<img src="images/Bag%202.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 2 </h4>
+						<p><span>39.99€</span></p>
+					</div>
+				</div>
+
+				<div class="em-product">
+					<img src="images/Bag%203.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 3</h4>
+						<p><span>29.99€</span></p>
+					</div>
+				</div>
+
+				<div class="em-product">
+					<img src="images/Bag%204.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 4 </h4>
+						<p><span>29.99€</span></p>
+					</div>
+				</div>
+
+				<div class="em-product">
+					<img src="images/Bag%205.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 5</h4>
+						<p><span>29.99€</span></p>
+					</div>
+				</div>
+
+				<div class="em-product">
+					<img src="images/Bag%206.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 6</h4>
+						<p><span>24.99€</span></p>
+					</div>
+				</div>
+				<div class="em-product">
+					<img src="images/Bag%207.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 7</h4>
+						<p><span>24.99€</span></p>
+					</div>
+				</div>
+				<div class="em-product">
+					<img src="images/Bag%2010.jpg" height="450px">
+					<div class="em-productdt">
+						<h4>Handmade bag 8</h4>
+						<p><span>24.99€</span></p>
+					</div>
+				</div>
+
+
+			</section>
+		</div>
+	</main>
+
+
+
+	</body>
+	<script>
+		function geeksforgeeks() {
+			var x = document.getElementById("ul2");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+</html>

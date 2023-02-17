@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Emilys+Candy&family=Fredericka+the+Great&family=Noto+Serif&display=swap');
+
+*, *::before, *::after{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightpink;
+	font-family:'Emilys Candy', cursive; 
+}
+nav {
+	background: pink;
+	height: 80px;
+	width: 100%;
+	padding: 10px 5%;
+	margin: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+}
+nav button{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+nav button img{
+    width: 90%;
+    height: 100%;
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+nav img {
+	height: 60px;
+}
+
+nav .em-ul1 {
+	float:right;
+	margin-right: 20px;
+    display: flex;
+    padding-top: 5px;
+}
+nav .em-ul2{
+    display: none;
+}
+nav .em-ul1 li {
+	display: inline;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav .em-ul1 li a {
+	color: rgb(255, 252, 252);
+	font-size: 20px;
+	text-decoration-line: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+nav .em-ul1 a:hover {
+	color: #dda0dd;
+	background-color: bisque;
+}
+
+nav .em-ul1.em-active {
+	background: hotpink;
+	transition: .5s;
+}
+
+
+@media(max-width: 952px){
+	label.em-logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;	
+	}
+}
+main {
+	border-top: 40px;
+	margin-top: 40px;
+	
+}
+.em-product {
+	float:left;
+	margin-bottom: auto;
+	padding-right: 10px;
+	padding-left:20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 3px;
+	border-color: deeppink;
+}
+.em-productdt h4{
+	font-family: 'Emilys Candy', cursive;
+}
+@media(min-width:901px){
+    nav .em-ul2{
+        display: none !important;
+    }
+}
+@media(max-width:900px){
+    nav{
+        padding:10px 30px;
+    }
+    nav button{
+        display: flex;
+    }
+    nav .em-ul1{
+        display: none;
+    }
+    nav .em-ul2{
+        display: block;
+        position: fixed;
+        top:80px;
+        left:0;
+        width: 100%;
+        background: pink;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    nav .em-ul2 li{
+        padding:10px 30px;
+    }
+    nav .em-ul2 a{
+        font-size: 20px;
+        color:#fff;
+        text-decoration: none;
+    }
+}
+
+/* Carousel------------------------- */
+.index-carousel{ 
+    margin: 100px auto 0;
+    width: 700px;
+}
+.index-carousel .carousel-control-next::before{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: '';
+    background-color: #222;
+    border-radius: 50%;
+}
+.index-carousel .carousel-control-prev::before{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: '';
+    background-color: #222;
+    border-radius: 50%;
+}
+.index-carousel .carousel-control-next .carousel-control-next-icon{
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+.index-carousel .carousel-control-prev .carousel-control-prev-icon{
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+.index-carousel .carousel-item{
+    width: 100%;
+}
+.index-carousel .carousel-item img{
+    width: auto !important;
+    height: 500px;
+    margin:0 auto;
+}
+@media(max-width:900px){
+    .index-carousel{ 
+        width: 400px;
+        max-width: 100%;
+    }
+    .index-carousel .carousel-item img{
+        height: 350px;
+    }
+}
+.em-container h3 label{
+    font-size: larger;
+}
+footer   { 
+    width: 100%;
+    height: 100%;
+    background-color: paleturquoise;
+    border-width: 100%;
+    align-content: end;
+    align-items: center;
+}
+footer
